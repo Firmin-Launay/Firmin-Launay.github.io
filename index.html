@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Firmin Launay — projects</title>
+        <meta name="description" content="“Portfolio” of Firmin Launay, which presents all the different projects he has realized and all the projects he is currently working on."/>
+        <meta name="keywords" content="firmin,launay,firmin launay,portfolio,cv,development,developer,raspimote,add_202010,stickopy,développement,développeur">
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/fittext.js"></script>
+    </head>
+    <body onload="init()">
+        <div class="header">
+            <h3 onmouseover="brighter(this)" onmouseout="defaultBrightness(this)">
+                <a href="https://github.com/Firmin-Launay" target="_blank">
+                    <img class="tiny_logo" src="img/github.png" type="image/png"/>
+                    GitHub
+                </a>
+            </h3>
+        </div>
+        <div class="title_img">
+            <img class="title_img_obj" src="img/firmin.png" type="image/png" alt="Firmin’s avatar" title="Firmin’s avatar"/>
+        </div>
+        <div class="title" id="title">
+            <h1>Firmin Launay</h1>
+        </div>
+
+        <div class="subtitle">
+            <h2>
+                Hello, my name is Firmin, and here are all the projects (mostly coding) that I realized or that I am currently working on.
+            </h2>
+        </div>
+        <div class="down_arrow_container">
+            <img class="down_arrow" src="img/down_arrow.png" type="image/png" onclick="smooth_scroll('content')"/>
+        </div>
+        <div id="content">
+            <div class="projects_range">
+
+                <div class="prj">
+                    <table class="prj_table">
+                        <tbody>
+                            <tr><td class="prj_title">
+                                <i>Générateur d’attestation de déplacement dérogatoire</i>
+                            </td></tr>
+                            <tr><td class="prj_img_container">
+                                <img class="prj_img" src="img/ADD_logo.png" type="image/png" alt="Logo of “Générateur d’attestation de déplacement dérogatoire”" title="Logo of “Générateur d’attestation de déplacement dérogatoire”"/>
+                            </td></tr>
+                            <tr><td class="prj_description">
+                                “Générateur d’attesation de déplacement dérogatoire” is a tiny desktop app (Linux, macOS, Windows) I developed in Python, which allowed to generate a testimonial for the lockdown of October-November 2020, and then for the curfew until March 2021, in France. This app was only disponible in French. <a href="https://twitter.com/FLA_Coding/status/1376253156380839942" target="_blank">This project is now archived and abandoned.</a>
+                            </td></tr>
+                            <tr><td class="prj_url" id="prj_url_1">
+                                &nbsp;<br/>
+                                <a href="https://github.com/FLA-Coding/ADD_202010" target="_blank" onmouseover="brighter(this)" onmouseout="defaultBrightness(this)">
+                                    <img class="tiny_logo" src="img/github.png" type="image/png"/> Discover on GitHub
+                                </a>
+                            </td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="prj">
+                    <table class="prj_table">
+                        <tbody>
+                            <tr><td class="prj_title">
+                                RaspiMote
+                            </td></tr>
+                            <tr><td class="prj_img_container">
+                                <img class="prj_img" src="img/RaspiMote_logo.png" type="image/png" alt="Logo of “RaspiMote”" title="Logo of “Générateur d’attestation de déplacement dérogatoire”"/>
+                            </td></tr>
+                            <tr><td class="prj_description">
+                                “RaspiMote” aims at turning a Raspberry Pi into a programmable keyboard / controller / remote control... It is developed by <a href="https://github.com/A-delta/" target"_blank">@A-delta</a> and I, using multiple languages, such as Python, JavaScript, PowerShell or Batch, and it is compatible with both Linux and Windows. No release has been published for the moment but it is almost ready.
+                            </td></tr>
+                            <tr><td class="prj_url" id="prj_url_2">
+                                &nbsp;<br/>
+                                <a href="https://raspimote.tk/" target="_blank" onmouseover="brighter(this)" onmouseout="defaultBrightness(this)">
+                                    <img class="tiny_logo" src="img/web.png" type="image/png"/> Discover our website
+                                </a>
+                            </td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="prj">
+                    <table class="prj_table">
+                        <tbody>
+                            <tr><td class="prj_title">
+                                <i>Stickopy</i>
+                            </td></tr>
+                            <tr><td class="prj_img_container">
+                                <img class="prj_img stickopy" src="img/Stickopy_logo.png" type="image/png" alt="Logo of “Stickopy”" title="Logo of “Stickopy”"/>
+                            </td></tr>
+                            <tr><td class="prj_description">
+                                “Stickopy” is a little piece of software, coded in Dart and still in early stages of development, which has for objective to allow you to copy the whole content of a USB drive automatically (when plugged), quickly and quietly.
+                            </td></tr>
+                            <tr><td class="prj_url" id="prj_url_3">
+                                &nbsp;<br/>
+                                <a href="https://github.com/FLA-Coding/Stickopy" target="_blank" onmouseover="brighter(this)" onmouseout="defaultBrightness(this)">
+                                    <img class="tiny_logo" src="img/github.png" type="image/png"/> Discover on GitHub
+                                </a>
+                            </td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+        </div>
+        <div class="footer">
+            <div class="me">
+                <script>getYear();</script>, Firmin Launay.
+            </div>
+        </div>
+    </body>
+</html>
