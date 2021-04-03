@@ -1,3 +1,3 @@
-# firmin-launay.github.io
+# firmin.tk
 
-Website which presents all the projects that I realized or that I am currently working on.
+Website, hosted on GitHub Pages, which presents all the projects that I realized or that I am currently working on.
