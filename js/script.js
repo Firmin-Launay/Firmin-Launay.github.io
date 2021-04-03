@@ -82,6 +82,11 @@ function is_on_mobile(autochange=true) {
 }
 
 function init() {
+    for (var cl of ["down_arrow", "title_img_obj", "prj_img", "tiny_logo"]) {
+        for (var image of document.getElementsByClassName(cl)) {
+            image.setAttribute('draggable', false);
+        }
+    }
     which_mode();
     is_on_mobile();
 }
