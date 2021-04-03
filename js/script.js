@@ -102,3 +102,17 @@ function defaultBrightness(el) {
 function getYear() {
     document.write(new Date().getFullYear());
 }
+
+function mouseOver(el) {
+    if (is_on_mobile(autochange=false) == false) {
+        el.style.filter = "invert(100%)";
+        el.children[0].style.filter = "invert(100%)";
+    }
+}
+
+function mouseOut(el) {
+    if (is_on_mobile(autochange=false) == false) {
+        el.style.filter = "invert(0%)";
+        el.children[0].style.filter = "invert(0%)";
+    }
+}
