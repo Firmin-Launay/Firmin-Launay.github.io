@@ -99,7 +99,7 @@ h3 {
 .down_arrow {
     filter: var(--image-invert);
     height: 50px;
-    cursor: s-resize;
+    cursor: pointer;
 }
 
 .down_arrow_container {
