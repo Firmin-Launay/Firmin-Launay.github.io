@@ -62,6 +62,7 @@ function set_mobile_mode() {
     let root = document.documentElement;
     root.style.setProperty("--ratio", "2");
     root.style.setProperty("--h1-size", "500%");
+    document.getElementById("myname").style.fontSize = "60px";
 }
 
 function is_on_mobile(autochange=true) {
