@@ -23,7 +23,7 @@ function animate(elem, style, unit, from, to, time, prop) {
 
 function smooth_scroll(element_id) {
     animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, document.getElementById(element_id).offsetTop - 20, 300, true);
-    window.history.replaceState(null, "", "#" + element_id)
+    window.history.pushState(null, "", "#" + element_id)
 }
 
 function set_light_mode() {
