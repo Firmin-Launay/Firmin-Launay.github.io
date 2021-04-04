@@ -89,6 +89,7 @@ function init() {
     }
     which_mode();
     is_on_mobile();
+    document.documentElement.style.setProperty("--cursor", "unset");
 }
 
 function brighter(el) {

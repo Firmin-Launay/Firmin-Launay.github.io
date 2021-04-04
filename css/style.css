@@ -12,11 +12,13 @@
     --background-color: #FFFFFF;
     --image-invert: invert(0%);
     --ratio: 1;
+    --cursor: wait;
 }
 
 html, body {
     background-color: var(--background-color);
     overflow-y: none;
+    cursor: var(--cursor);
 }
 
 h1 {
