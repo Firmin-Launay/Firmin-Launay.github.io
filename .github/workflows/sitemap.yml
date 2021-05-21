@@ -6,6 +6,7 @@ on:
 
 jobs:
   sitemap_job:
+    if: "!contains(github.event.head_commit.message, 'nosm')"
     runs-on: ubuntu-latest
     name: Generate a sitemap
 
