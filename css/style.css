@@ -38,6 +38,7 @@ h1 {
     -moz-user-select: none;
     -o-user-select: none;
     user-select: none;
+    cursor: default;
 }
 
 h2 {
@@ -59,6 +60,7 @@ h2 {
     -moz-user-select: none;
     -o-user-select: none;
     user-select: none;
+    cursor: default;
 }
 
 .title_img_obj {
@@ -210,6 +212,7 @@ h3 {
     -moz-user-select: none;
     -o-user-select: none;
     user-select: none;
+    cursor: default;
 }
 
 .stickopy {
@@ -239,6 +242,7 @@ h4 {
     -moz-user-select: none;
     -o-user-select: none;
     user-select: none;
+    cursor: default;
 }
 
 .lang {
