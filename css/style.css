@@ -26,6 +26,7 @@ h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     text-align: center;
+    margin-bottom: 0;
 }
 
 .title {
@@ -39,6 +40,7 @@ h1 {
     -o-user-select: none;
     user-select: none;
     cursor: default;
+    margin-bottom: 100px;
 }
 
 h2 {
@@ -269,4 +271,13 @@ h4 {
 
 .lang_logo {
     height: 38px;
+}
+
+.love_open_source {
+    margin: 0;
+    color: var(--title-color);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: calc(30px * var(--ratio));
+    float: right;
 }
