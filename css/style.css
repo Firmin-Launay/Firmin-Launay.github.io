@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 :root {
@@ -235,7 +235,8 @@ a {
 
 h4 {
     font-variant-caps: small-caps;
-    font-family: "Train One", cursive;
+    font-family: "Monoton", cursive;
+    font-weight: lighter;
     font-size: calc(50px * var(--ratio));
     color: var(--subtitle-color);
     margin-bottom: 10px;
