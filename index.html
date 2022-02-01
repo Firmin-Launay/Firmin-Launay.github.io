@@ -1,181 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <title>Firmin Launay — projects</title>
-        <meta name="description" content="Personal website of Firmin Launay. Here, you can find some projects I published, or I am currently working on."/>
-        <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
-        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
-        <script type="text/javascript" src="js/script.js"></script>
-        <script type="text/javascript" src="js/fittext.js"></script>
-    </head>
-    <body onload="init()" id="body">
-        <div class="header">
-            <h3 onmouseover="brighter(this)" onmouseout="defaultBrightness(this)">
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://metro-stops.firminlaunay.me/metro.css"/>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico"/>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico"/>
+    <title>Firmin Launay</title>
+</head>
+<body>
+    <nav id="top-bar">
+        <div class="social-medias">
+            <div class="social-media">
                 <a href="https://github.com/filau" target="_blank">
-                    <img class="tiny_logo" src="img/github.png" type="image/png"/>
+                    <img src="./img/github_logo.svg" type="image/svg+xml"/>
                     GitHub
                 </a>
-            </h3>
+            </div>
+            <div class="social-media">
+                <a href="https://twitter.com/FirmLaun" target="_blank">
+                    <img src="./img/twitter_logo.svg" type="image/svg+xml"/>
+                    Twitter
+                </a>
+            </div>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/filau/" target="_blank">
+                    <img src="./img/linkedin_logo.svg" type="image/svg+xml"/>
+                    LinkedIn
+                </a>
+            </div>
         </div>
-        <div class="title_img">
-            <img class="title_img_obj" src="img/firmin.png" type="image/png" alt="Firmin’s avatar" title="Firmin’s avatar"/>
+        <div class="main-title">
+            <table>
+                <tbody>
+                    <tr><td><div class="pfp">
+                        <img src="./img/firmin.png" type="image/png" alt="Firmin’s avatar" title="Firmin’s avatar"/>
+                    </div></td></tr>
+                    <tr><td>
+                        <h1>Firmin Launay</h1>
+                    </td></tr>
+                    <tr><td>
+                        <div class="love-open-source">
+                            <a href="https://github.com/filau/firminlaunay.me" target="_blank">
+                                ♡ open-source
+                            </a>
+                        </div>
+                    </td></tr>
+                </tbody>
+            </table>
         </div>
-        <div class="title" id="title">
-            <h1 id="myname">Firmin Launay</h1>
-            <span class="love_open_source">♡ open-source</span>
+        <div class="intro">
+            <h2>Hey there&nbsp;! Here are some projects, mostly related to coding, that I published or that I am currently working on&nbsp;!</h2>
         </div>
-
-        <div class="subtitle">
-            <h2>
-                Hello, my name is Firmin, and here are all the projects (mostly coding) that I published or that I am currently working on.
-            </h2>
+        <div class="proceed-to-content">
+            <a href="#main-content"><div>
+                <img src="./img/arrow_down.svg" type="image/svg+xml" alt="Proceed to main content" title="Proceed to main content"/>
+            </div></a>
         </div>
-        <div class="down_arrow_container">
-            <img class="down_arrow" src="img/down_arrow.png" type="image/png" onclick="smooth_scroll('content')"/>
-        </div>
-        <div id="content">
-            <div class="content_range">
-                <h4>Current projects</h4>
-                <!-- <div class="prj">
-                    <table class="prj_table">
-                        <tbody>
-                            <tr><td class="prj_title">
-                                <i>Générateur d’attestation de déplacement dérogatoire</i>
-                            </td></tr>
-                            <tr><td class="prj_img_container">
-                                <img class="prj_img" src="img/ADD_logo.png" type="image/png" alt="Logo of “Générateur d’attestation de déplacement dérogatoire”" title="Logo of “Générateur d’attestation de déplacement dérogatoire”"/>
-                            </td></tr>
-                            <tr><td class="prj_description">
-                                “Générateur d’attesation de déplacement dérogatoire” is a tiny desktop app (Linux, macOS, Windows) I developed in Python, which allowed to generate a testimonial for the lockdown of October-November 2020, and then for the curfew until March 2021, in France. This app was only disponible in French. <a href="https://twitter.com/FLA_Coding/status/1376253156380839942" target="_blank">This project is now archived and abandoned.</a>
-                            </td></tr>
-                            <tr><td class="prj_url" id="prj_url_1">
-                                &nbsp;<br/>
-                                <a href="https://github.com/FLA-Coding/ADD_202010" target="_blank" onmouseover="brighter(this)" onmouseout="defaultBrightness(this)">
-                                    <img class="tiny_logo" src="img/github.png" type="image/png"/> Discover on GitHub
-                                </a>
-                            </td></tr>
-                        </tbody>
-                    </table>
+    </nav>
+    <main id="main-content">
+        <div class="part">
+            <h3>Projects</h3>
+            <div class="projects">
+                <div>
+                    <div class="prj-title">
+                        Stickopy
+                    </div>
+                    <div class="prj-img">
+                        <img class="invertable" src="./img/stickopy.png" alt="Logo of Stickopy" title="Logo of Stickopy"/>
+                    </div>
+                    <div class="prj-desc">
+                        “Stickopy” is a little piece of software, coded in Dart, which has for objective to allow you to copy the whole content of a USB drive automatically (when plugged), quickly and quietly. It has been published in April 2021, and is still under development for future updates.
+                    </div>
+                    <a href="https://github.com/FLA-Coding/Stickopy" target="_blank">
+                        <div class="prj-url">
+                            <img src="img/github_logo.svg" type="image/svg+xml"/>Discover on GitHub
+                        </div>
+                    </a>
                 </div>
-
-                <div class="prj">
-                    <table class="prj_table">
-                        <tbody>
-                            <tr><td class="prj_title">
-                                RaspiMote
-                            </td></tr>
-                            <tr><td class="prj_img_container">
-                                <img class="prj_img" src="img/RaspiMote_logo.png" type="image/png" alt="Logo of “RaspiMote”" title="Logo of “RaspiMote”"/>
-                            </td></tr>
-                            <tr><td class="prj_description">
-                                “RaspiMote” aims at turning a Raspberry Pi into a programmable keyboard / controller / remote control... It is developed by <a href="https://github.com/A-delta/" target="_blank">@A-delta</a> and I, using multiple languages, such as Python, JavaScript, PowerShell or Batch, and it is compatible with both Linux and Windows. No release has been published for the moment but it is almost ready.
-                            </td></tr>
-                            <tr><td class="prj_url" id="prj_url_2">
-                                &nbsp;<br/>
-                                <a href="https://raspimote.tk/" target="_blank" onmouseover="brighter(this)" onmouseout="defaultBrightness(this)">
-                                    <img class="tiny_logo" src="img/web.png" type="image/png"/> Discover our website
-                                </a>
-                            </td></tr>
-                        </tbody>
-                    </table>
-                </div> -->
-
-                <div class="prj">
-                    <table class="prj_table">
-                        <tbody>
-                            <tr><td class="prj_title">
-                                Stickopy
-                            </td></tr>
-                            <tr><td class="prj_img_container">
-                                <img class="prj_img stickopy" src="img/Stickopy_logo.png" type="image/png" alt="Logo of “Stickopy”" title="Logo of “Stickopy”"/>
-                            </td></tr>
-                            <tr><td class="prj_description">
-                                “Stickopy” is a little piece of software, coded in Dart, which has for objective to allow you to copy the whole content of a USB drive automatically (when plugged), quickly and quietly. It has been published in April 2021, and is still under development for future updates.
-                            </td></tr>
-                            <tr><td class="prj_url" id="prj_url_3">
-                                &nbsp;<br/>
-                                <a href="https://github.com/FLA-Coding/Stickopy" target="_blank" onmouseover="brighter(this)" onmouseout="defaultBrightness(this)">
-                                    <img class="tiny_logo" src="img/github.png" type="image/png"/> Discover on GitHub
-                                </a>
-                            </td></tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="prj">
-                    <table class="prj_table">
-                        <tbody>
-                            <tr><td class="prj_title">
-                                Python Divia API
-                            </td></tr>
-                            <tr><td class="prj_img_container">
-                                <img class="prj_img" src="img/Divia_API_logo.png" type="image/png" alt="Logo of “Divia API”" title="Logo of “Divia API”"/>
-                            </td></tr>
-                            <tr><td class="prj_description">
-                                “Python Divia API” is a simple Python library, which aims at providing a simple way to retreive “TOTEM” schedules of Divia (the city of Dijon’s public transit authority) bus and tramways, along with “DiviaVélodi” free-floating bikes availabilities. It is heavily inspired of <a href="https://github.com/gauthier-th/divia-api" target="_blank">its equivalent in JavaScript, developed by <b>@gauthier-th</b></a>.
-                            </td></tr>
-                            <tr><td class="prj_url" id="prj_url_4">
-                                &nbsp;<br/>
-                                <a href="https://pypi.org/project/divia-api/" target="_blank" onmouseover="brighter(this)" onmouseout="defaultBrightness(this)">
-                                    <img class="tiny_logo" src="img/python_pypi.png" type="image/png"/> Discover on PyPI
-                                </a>
-                            </td></tr>
-                        </tbody>
-                    </table>
+                <div>
+                    <div class="prj-title">
+                        Python Divia API
+                    </div>
+                    <div class="prj-img">
+                        <img src="./img/pda.png" alt="Logo of Stickopy" title="Logo of Stickopy"/>
+                    </div>
+                    <div class="prj-desc">
+                        “Python Divia API” is a simple Python library, which aims at providing a simple way to retreive “TOTEM” schedules of Divia (the city of Dijon’s public transit authority) bus and tramways, along with “DiviaVélodi” free-floating bikes availabilities. It is heavily inspired of its equivalent in JavaScript, developed by <a href="https://github.com/gauthier-th/divia-api" target="_blank">@gauthier-th</a>.
+                    </div>
+                    <a href="https://pypi.org/project/divia-api/" target="_blank">
+                        <div class="prj-url">
+                            <img src="img/python_black.svg" type="image/svg+xml"/>Discover on PyPI
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
 
-            <div class="content_range">
-                <h4>Skills</h4>
-                <div class="lang" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="window.open('https:/\/www.python.org/')">
-                    <img class="lang_logo" src="img/python.png" type="image/png" draggable="false"/>
-                    Python
-                </div>
-                <div class="lang" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="window.open('https:/\/dart.dev/')">
-                    <img class="lang_logo" src="img/dart.png" type="image/png" draggable="false"/>
-                    Dart
-                </div>
-                <div class="lang" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="window.open('https:/\/developer.mozilla.org/fr/docs/Web/JavaScript')">
-                    <img class="lang_logo" src="img/js.png" type="image/png" draggable="false"/>
-                    JavaScript
-                </div>
-                <div class="lang" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="window.open('https:/\/developer.mozilla.org/fr/docs/Web/HTML')">
-                    <img class="lang_logo" src="img/html.png" type="image/png" draggable="false"/>
-                    HTML & CSS
-                </div>
-                <div class="lang" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="window.open('https:/\/flask.palletsprojects.com/')">
-                    <img class="lang_logo" src="img/flask.png" type="image/png" draggable="false"/>
-                    Flask
-                </div>
-                <div class="lang" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="window.open('https:/\/flutter.dev/')">
-                    <img class="lang_logo" src="img/flutter.png" type="image/png" draggable="false"/>
-                    Flutter
-                </div>
-                <div class="lang" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="window.open('https:/\/docs.microsoft.com/windows-server/administration/windows-commands/windows-commands')">
-                    <img class="lang_logo" src="img/wt.png" type="image/png" draggable="false"/>
-                    CMD
-                </div>
-                <div class="lang" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="window.open('https:/\/www.gnu.org/software/bash/manual/html_node/index.html')">
-                    <img class="lang_logo" src="img/shell.png" type="image/png" draggable="false"/>
-                    Unix shell
-                </div>
-                <div class="lang" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="window.open('https:/\/git-scm.com/')">
-                    <img class="lang_logo" src="img/git.png" type="image/png" draggable="false"/>
-                    Git
-                </div>
-                <div class="lang" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="window.open('https:/\/www.mongodb.com/')">
-                    <img class="lang_logo" src="img/mongo.png" type="image/png" draggable="false"/>
-                    MongoDB
+        <div class="part">
+            <h3>Skills</h3>
+            <div class="skills">
+                <a href="https://www.python.org/" target="_blank">
+                    <div>
+                        <div class="skill-img">
+                            <img src="./img/python_logo.svg" type="image/svg+xml"/>
+                        </div>
+                        <div class="skill-title">
+                            Python
+                        </div>
+                    </div>                
+                </a>
+                <a href="https://dart.dev/" target="_blank">
+                    <div>
+                        <div class="skill-img">
+                            <img src="./img/dart_logo.svg" type="image/svg+xml"/>
+                        </div>
+                        <div class="skill-title">
+                            Dart
+                        </div>
+                    </div>                
+                </a>
+                <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank">
+                    <div>
+                        <div class="skill-img">
+                            <img src="./img/javascript_logo.svg" type="image/svg+xml"/>
+                        </div>
+                        <div class="skill-title">
+                            JavaScript
+                        </div>
+                    </div>                
+                </a>
+                <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">
+                    <div>
+                        <div class="skill-img">
+                            <img src="./img/c_logo.svg" type="image/svg+xml"/>
+                        </div>
+                        <div class="skill-title">
+                            C
+                        </div>
+                    </div>                
+                </a>
+                <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank">
+                    <div>
+                        <div class="skill-img">
+                            <img src="./img/html_logo.svg" type="image/svg+xml"/>
+                        </div>
+                        <div class="skill-title">
+                            HTML & CSS
+                        </div>
+                    </div>                
+                </a>
+                <a href="https://flask.palletsprojects.com/" target="_blank">
+                    <div>
+                        <div class="skill-img">
+                            <img src="./img/flask_logo.svg" class="invertable" type="image/svg+xml"/>
+                        </div>
+                        <div class="skill-title">
+                            Flask
+                        </div>
+                    </div>                
+                </a>
+                <a href="https://flutter.dev/" target="_blank">
+                    <div>
+                        <div class="skill-img">
+                            <img src="./img/flutter_logo.svg" type="image/svg+xml"/>
+                        </div>
+                        <div class="skill-title">
+                            Flutter
+                        </div>
+                    </div>                
+                </a>
+                <a href="https://www.gnu.org/software/bash/manual/html_node/index.html" target="_blank">
+                    <div>
+                        <div class="skill-img">
+                            <img src="./img/terminal_logo.svg" type="image/svg+xml"/>
+                        </div>
+                        <div class="skill-title">
+                            Unix shell
+                        </div>
+                    </div>                
+                </a>
+                <a href="https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands" target="_blank">
+                    <div>
+                        <div class="skill-img">
+                            <img src="./img/wt_logo.svg" type="image/svg+xml"/>
+                        </div>
+                        <div class="skill-title">
+                            CMD
+                        </div>
+                    </div>                
+                </a>
+                <a href="https://git-scm.com/" target="_blank">
+                    <div>
+                        <div class="skill-img">
+                            <img src="./img/git_logo.svg" type="image/svg+xml"/>
+                        </div>
+                        <div class="skill-title">
+                            Git
+                        </div>
+                    </div>                
+                </a>
+                <a href="https://www.mongodb.com/" target="_blank">
+                    <div>
+                        <div class="skill-img">
+                            <img src="./img/mongo_logo.svg" type="image/svg+xml"/>
+                        </div>
+                        <div class="skill-title">
+                            MongoDB
+                        </div>
+                    </div>                
+                </a>
+            </div>
+        </div>
+
+        <div class="part">
+            <h3>Studies</h3>
+            <div class="metro-wrapper">
+                <div class="filau-metro">
+                    <div>
+                        <div>2021 - present</div>
+                        <div>Student at <a href="https://esirem.u-bourgogne.fr/" target="_blank">ESIREM</a> (Dijon, France)</div>
+                    </div>
+                    <div>
+                        <div>2021</div>
+                        <div>French Baccalauréat (mathematics, physics & chemistery)</div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <div class="me">
-                <script>getYear();</script>, Firmin Launay.
-            </div>
-        </div>
-    </body>
+    </main>
+
+    <footer>
+        <p>Made with ♡ using pure HTML and CSS.</p>
+        <p><a href="https://github.com/filau/firminlaunay.me/blob/main/LICENSE">© Copyright</a> <script>document.write(new Date().getFullYear());</script>, Firmin Launay.</p>
+    </footer>
+</body>
 </html>
